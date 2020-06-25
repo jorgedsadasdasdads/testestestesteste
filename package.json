@@ -1,0 +1,45 @@
+{
+  "name": "sandy",
+  "version": "1.0.0",
+  "description": "Um bot para o discord.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Liga dos Programadores",
+  "contributors": [
+    "Rafael \"Bee\" Pereira <rafael@beecoding.net> (https://rafael.wtf)",
+    "Álvaro Filho (https://alvarofilho.github.io/)"
+  ],
+  "license": "Unlicense",
+  "dependencies": {
+    "array-sort": "^1.0.0",
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "duck-duck-scrape": "^1.0.3",
+    "enmap": "^5.2.4",
+    "express": "^4.17.1",
+    "express-glitch-keepalive": "^0.2.0",
+    "isurl": "^4.0.1",
+    "jimp": "^0.13.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "node-gyp": "^7.0.0",
+    "opusscript": "0.0.7",
+    "quick.db": "^7.1.1",
+    "simple-youtube-api": "^5.2.1",
+    "superagent": "^5.2.2",
+    "table": "^5.4.6",
+    "weather-js": "^2.0.0",
+    "ytdl-core": "^2.1.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgedsadasdasdads/UniBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jorgedsadasdasdads/UniBot/issues"
+  },
+  "homepage": "https://github.com/jorgedsadasdasdads/UniBot#readme"
+}
