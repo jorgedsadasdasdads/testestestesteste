@@ -7,7 +7,7 @@ module.exports = {
     let rodape = 'Sandy © Todos Direitos Reservados';
 
     let prefix = '='
-    let cab = '<a:blue_estrelaPDV:724024700308815923> Sandy 2.0 <a:blue_estrelaPDV:724024700308815923>';
+    let cab = '<a:CoroaTKF:726199479635673179> ᴀᴊᴜᴅᴀ <a:CoroaTKF:726199479635673179>';
 
     message.channel.send(``).then(async msg => {message.delete(20000)})
 
@@ -17,20 +17,20 @@ module.exports = {
 
     .setTitle(cab)
     .setDescription('Olá escolha uma das opções!')
-    .setDescription("<a:1F:724775846145163274> **Administração** \n `Veja os comandos de Administração!` \n\n <a:2F:724775878277726259> **Diversão** \n `Veja todos os comandos de diversão!` \n\n <a:3F:724775915401248788> **Utilidades** \n `Veja todos os comandos utilidades para seu servidor!` \n\n <a:4F:724775971059662959> **Suporte** \n `Veja todos os comandos de suporte!`")
+    .setDescription(`<:1_:726157832273002496> **Administração** \n Veja os comandos de Administração! \n\n <:2_:726157829961940994> **Diversão** \n Veja todos os comandos de diversão! \n\n <:3_:726157831954235443> **Utilidades** \n Veja todos os comandos utilidades para seu servidor! \n\n <:4_:726157832226996285> **Suporte** \n Veja todos os comandos de suporte! \n\n <a:seta:726167657052635148> **[Me adicione em seu servidor](https://discord.com/oauth2/authorize?client_id=721879918664876132&scope=bot&permissions=268443710)** \n <a:seta:726167657052635148> **[Meu servidor de suporte](https://discord.gg/TdYpGF2)**`)
     .setThumbnail(client.user.avatarURL)
-    .setColor(`RED`)
+    .setColor(`#8b00fa`)
     .setFooter(rodape)
 
     message.channel.send(embed).then(async msg => {{message.delete(20000)}
 
-    msg.react('724775846145163274').then(r => msg.react('724775878277726259').then(r => msg.react('724775915401248788').then(r => msg.react('724775971059662959').then(r => msg.react('724426121806086196')))))
+    msg.react('726157832273002496').then(r => msg.react('726157829961940994').then(r => msg.react('726157831954235443').then(r => msg.react('726157832226996285').then(r => msg.react('726165564153921556')))))
 
-        const staffs = (reaction, user) => reaction.emoji.id === '724775846145163274' && user.id === message.author.id
-        const menu = (reaction, user) => reaction.emoji.id === '724775915401248788' && user.id === message.author.id
-        const diversao = (reaction, user) => reaction.emoji.id === '724775878277726259' && user.id === message.author.id
-        const suporte = (reaction, user) => reaction.emoji.id === '724775971059662959' && user.id === message.author.id
-        const back = (reaction, user) => reaction.emoji.id === '724426121806086196' && user.id === message.author.id
+        const staffs = (reaction, user) => reaction.emoji.id === '726157832273002496' && user.id === message.author.id
+        const diversao = (reaction, user) => reaction.emoji.id === '726157829961940994' && user.id === message.author.id
+        const menu = (reaction, user) => reaction.emoji.id === '726157831954235443' && user.id === message.author.id
+        const suporte = (reaction, user) => reaction.emoji.id === '726157832226996285' && user.id === message.author.id
+        const back = (reaction, user) => reaction.emoji.id === '726165564153921556' && user.id === message.author.id
 
         const s = msg.createReactionCollector(staffs, {time: 60000});
         const di = msg.createReactionCollector(diversao, {time: 60000});
@@ -43,11 +43,11 @@ module.exports = {
             r.remove(r.users.last().id).catch(e => {})
             
                 embed.setTitle(cab)
-                embed.setDescription('Administração \n\n  **Moderação** \n <:setagif:723714864505290832> s.ban (usuario) (motivo) \n <:setagif:723714864505290832> s.kick (usuario) (motivo) \n <:setagif:723714864505290832> s.unban (usuario) \n <:setagif:723714864505290832> s.mute (usuario) (motivo)\n <:setagif:723714864505290832> s.unmute (usuario) \n <:setagif:723714864505290832> s.lock \n <:setagif:723714864505290832> s.unlock \n <:setagif:723714864505290832> s.listban \n <:setagif:723714864505290832> s.antiinvite <on/off>')
+                embed.setDescription('Administração \n\n  **Moderação** \n <:seta:726196684211617943> s.ban (usuario) (motivo) \n <:seta:726196684211617943> s.kick (usuario) (motivo) \n <:seta:726196684211617943> s.unban (usuario) \n <:seta:726196684211617943> s.mute (usuario) (motivo)\n <:seta:726196684211617943> s.unmute (usuario) \n <:seta:726196684211617943> s.lock \n <:seta:726196684211617943> s.unlock \n <:seta:726196684211617943> s.listban \n <:seta:726196684211617943> s.antiinvite <on/off>')
 
                 
                 embed.setThumbnail(client.user.avatarURL)
-                embed.setColor(`RED`)
+                embed.setColor(`#8b00fa`)
                 embed.setFooter(rodape)
             
                 msg.edit(embed)
@@ -58,9 +58,9 @@ module.exports = {
             r.remove(r.users.last().id).catch(e => {})
             
             embed.setTitle(cab)
-            embed.setDescription('Diversão \n\n **Comandos de Diversão:** \n <:setagif:723714864505290832> s.beijar (usuario) \n <:setagif:723714864505290832> s.abraçar (usuario) \n <:setagif:723714864505290832> s.piada  \n <:setagif:723714864505290832> s.pergunta (pergunta) \n <:setagif:723714864505290832> s.laranjo (texto) \n <:setagif:723714864505290832> s.ship (@usuário 1) (@usuário 2) \n <:setagif:723714864505290832> s.tempo (cidade)')
+            embed.setDescription('Diversão \n\n **Comandos de Diversão:** \n <:seta:726196684211617943> s.beijar (usuario) \n <:seta:726196684211617943> s.abraçar (usuario) \n <:seta:726196684211617943> s.piada  \n <:seta:726196684211617943> s.pergunta (pergunta) \n <:seta:726196684211617943> s.laranjo (texto) \n <:seta:726196684211617943> s.ship (@usuário 1) (@usuário 2) \n <:seta:726196684211617943> s.tempo (cidade)')
             embed.setThumbnail(client.user.avatarURL)
-            embed.setColor(`RED`)
+            embed.setColor(`#8b00fa`)
             embed.setFooter(rodape)
         
             msg.edit(embed)
@@ -71,9 +71,9 @@ module.exports = {
             r.remove(r.users.last().id).catch(e => {})
             
             embed.setTitle(cab)
-            embed.setDescription('Suporte \n\n **Comandos de suporte e ajuda** \n <:setagif:723714864505290832> s.suporte \n <:setagif:723714864505290832> s.convite \n <:setagif:723714864505290832> s.ping \n <:setagif:723714864505290832> s.ajuda')
+            embed.setDescription('Suporte \n\n **Comandos de suporte e ajuda** \n <:seta:726196684211617943> s.suporte \n <:seta:726196684211617943> s.convite \n <:seta:726196684211617943> s.ping \n <:seta:726196684211617943> s.ajuda')
             embed.setThumbnail(client.user.avatarURL)
-            embed.setColor(`RED`)
+            embed.setColor(`#8b00fa`)
             embed.setFooter(rodape)
         
             msg.edit(embed)
@@ -85,9 +85,9 @@ module.exports = {
             r.remove(r.users.last().id).catch(e => {})
             
             embed.setTitle(cab)
-            embed.setDescription('Utilidades \n\n **Comandos de Utilidade:** \n <:setagif:723714864505290832> s.votação (votação)  \n <:setagif:723714864505290832> s.sorteio (tempo, item a ser sorteado) \n <:setagif:723714864505290832> s.roleall (cargo)  \n <:setagif:723714864505290832> s.servericon \n\ <:setagif:723714864505290832> s.userinfo (usuário, opicional) \n <:setagif:723714864505290832> s.say (texto) \n <:setagif:723714864505290832> s.clear (1 a 100)')
+            embed.setDescription('Utilidades \n\n **Comandos de Utilidade:** \n <:seta:726196684211617943> s.votação (votação)  \n <:seta:726196684211617943> s.sorteio (tempo, item a ser sorteado) \n <:seta:726196684211617943> s.roleall (cargo)  \n <:seta:726196684211617943> s.servericon \n\ <:seta:726196684211617943> s.userinfo (usuário, opicional) \n <:seta:726196684211617943> s.say (texto) \n <:seta:726196684211617943> s.clear (1 a 100) \n <:seta:726196684211617943> s.slowmode (tempo)')
             embed.setThumbnail(client.user.avatarURL)
-            embed.setColor(`RED`)
+            embed.setColor(`#8b00fa`)
             embed.setFooter(rodape)
         
             msg.edit(embed)
@@ -100,9 +100,9 @@ module.exports = {
             
             embed.setTitle(cab)
             embed.setDescription('Escolha uma das Opções')
-            embed.setDescription('<a:1F:724775846145163274> **Administração** \n `Veja os comandos de Administração!` \n\n <a:2F:724775878277726259> **Discord** \n `Veja todos os comandos para usar em seu servidor!` \n\n <a:3F:724775915401248788> **Diversão** \n `Veja todos os comandos diversão!` \n\n <a:4F:724775971059662959> **Suporte** \n `Veja todos os comandos de suporte!`')
+            embed.setDescription(`<:1_:726157832273002496> **Administração** \n Veja os comandos de Administração! \n\n <:2_:726157829961940994> **Diversão** \n Veja todos os comandos de diversão! \n\n <:3_:726157831954235443> **Utilidades** \n Veja todos os comandos utilidades para seu servidor! \n\n <:4_:726157832226996285> **Suporte** \n Veja todos os comandos de suporte! \n\n <a:seta:726167657052635148> **[Me adicione em seu servidor](https://discord.com/oauth2/authorize?client_id=721879918664876132&scope=bot&permissions=268443710)** \n <a:seta:726167657052635148> **[Meu servidor de suporte](https://discord.gg/TdYpGF2)**`)
             embed.setThumbnail(client.user.avatarURL)
-            embed.setColor(`RED`)
+            embed.setColor(`#8b00fa`)
             embed.setFooter(rodape)
         
             msg.edit(embed)
