@@ -61,7 +61,7 @@ client.on('message', message => {
   // If the message is "p"
   if (message.content === 's.suporte') {
     // Send "pong" to the same channel
-    message.channel.send('<a:NixingSeta1:704106890589634560> **Entre no meu servidor de suporte e fique por dentro de todas as atualizações que rolam na Sandy <a:NixingFixo:704106690877849621> ** https://discord.gg/u6vrdtw');
+    message.channel.send('<a:NixingSeta1:704106890589634560> **Entre no meu servidor de suporte e fique por dentro de todas as atualizações que rolam na Sandy <a:NixingFixo:704106690877849621> ** https://discord.gg/TdYpGF2');
   }
 });
 
@@ -122,5 +122,6 @@ client.on("message", async message => {
   }
   }
 })
+
 
 client.login(process.env.AUTH_TOKEN) /* Inicia o Bot. */
